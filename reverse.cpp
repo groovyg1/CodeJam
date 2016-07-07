@@ -2,13 +2,14 @@
 #include <vector>
 #include <sstream>
 #include <string>
-#include <iterator>
+#include <cstdio>
 
 using namespace std;
 
 int main(){
     int test;
     cin >> test;
+    char ch = getchar();
     for(int k = 1; k <= test; k++){
     
         string input, output = "";
@@ -26,7 +27,7 @@ int main(){
             output = output + token[i] + " ";
         }
         
-        cout << "Case #" << k << " " << output << endl;
+        cout << "Case #" << k << ": " << output << endl;
     }
     return 0;
 }
